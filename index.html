@@ -137,8 +137,11 @@ input[type=range] { flex: 1; cursor: pointer; }
 .event-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px 12px; }
 .event-grid-item { display: flex; gap: 5px; align-items: flex-start; cursor: pointer; padding: 2px 0; transition: opacity 0.3s; }
 .event-grid-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; margin-top: 3px; }
+.event-grid-dot.origin { width: 8px; height: 8px; border-radius: 1px; transform: rotate(45deg); margin-top: 1px; flex-shrink: 0; }
 .event-grid-year { font-size: 8px; font-family: 'Courier New', monospace; }
 .event-grid-title { font-size: 8px; color: #6a5a48; line-height: 1.4; }
+.event-grid-title.origin-title { color: #c04040; }
+.origin-badge { font-size: 7px; color: #c04040; letter-spacing: 2px; font-family: 'Courier New', monospace; }
 
 /* ── FOOTER ── */
 .footer { font-size: 8px; color: #1e1a10; margin-top: 16px; letter-spacing: 0.15em; text-align: center; line-height: 1.8; font-family: 'Courier New', monospace; }
@@ -298,7 +301,7 @@ input[type=range] { flex: 1; cursor: pointer; }
   <div style="flex:1;display:flex;flex-direction:column;gap:2px;">
     <input type="range" id="year-slider" min="1980" max="2024" value="1980" oninput="onSlider(this.value)" style="width:100%;">
     <div class="slider-labels">
-      <span>1980 — Apprenticeship Peak</span>
+      <span>1981 — Origin Event</span>
       <span>Drag to advance through structural history</span>
       <span>2024 — Total Inversion</span>
     </div>
@@ -342,7 +345,9 @@ input[type=range] { flex: 1; cursor: pointer; }
 <div class="footer">
   FROM THE PAPERS: ON THE LIMITS OF DESIGN INTENT &nbsp;/&nbsp; WHY FRAGMENTATION IS INEVITABLE IN SCALED DELIVERY<br>
   OBSERVATIONAL INSTRUMENT · designintentlinguist.com · r/LanguageOfDrafting<br>
-  BASIS: BLS CONSTRUCTION PRODUCTIVITY INDEX (1987=100) · WEIGHTED LAYER PRESSURE MODEL
+  BASIS: BLS CONSTRUCTION PRODUCTIVITY INDEX (1987=100) · WEIGHTED LAYER PRESSURE MODEL<br>
+  <span style="color:#3a2010;">ORIGIN EVENT: HYATT REGENCY 1981 · FIRST CURRICULUM EXTRACTION · ZERO COMPENSATING RESPONSES · 44 YEARS</span><br>
+  <span style="color:#2a1808;">EVERY RFI · EVERY CHANGE ORDER · EVERY CONSERVATIVE DECISION THAT NEVER GOT PRESSURE-TESTED — THIS IS THE COST OF SPEAKING</span>
 </div>
 
 <script>
@@ -393,21 +398,28 @@ const ERAS = [
 ];
 
 const allEvents = [
+  // ORIGIN EVENT
+  {year:1981,layer:'field',impact:12,origin:true,title:'Hyatt Regency Collapse — Origin Event',detail:'Kansas City. 114 deaths. EOR loses license for failure at the fabrication interface. The profession learns the right lesson. The liability response removes the first brick from the training environment — without anyone recognizing it as curriculum extraction. Legal event. Institutional event. Training event. Language event. Cultural event. Compounding event. First of many irreversible extractions. No compensating response ever filed at any subsequent revision.'},
   // DRAFTING ROOM
   {year:1982,layer:'drafting',impact:18,title:'AutoCAD 1.0 Released',detail:'Board drafting begins displacement. Drafters become operators rather than authors.'},
   {year:1985,layer:'drafting',impact:22,title:'CAD Adoption Accelerates',detail:'Senior drafters retrain or exit in large firms. Institutional memory begins fragmenting.'},
   {year:1989,layer:'drafting',impact:30,title:'Drafting as Trade Language Ends',detail:'Effectively ends in most university programs. Replaced by CAD operation.'},
-  {year:1994,layer:'drafting',impact:40,title:'Full CAD Displacement',detail:'Last generation trained on boards begins retiring. Hand sketching ends in production. Transmission pathway closes.'},
+  {year:1992,layer:'drafting',impact:36,title:'Snake River Falls — Last Dual Transmission',detail:'Cedar Point. First CAD project started manually, completed in CAD after hours. The tool transition lived from both sides simultaneously. Geometry transferred. Everything the line carried beyond geometry — proportion, resistance, embedded judgment — had no equivalent in the new medium. Most drafters never ran the comparison. They just came in the next morning and opened the software.'},
+  {year:1994,layer:'drafting',impact:42,title:'Full CAD Displacement',detail:'Last generation trained on boards begins retiring. Hand sketching ends in production. Transmission pathway closes.'},
+  {year:1990,layer:'drafting',impact:33,title:'Stamp Language Shifts — "Approved" Disappears',detail:'Review stamps move from "Approved" to "No Exceptions Taken," "Furnish As Noted," "Reviewed." The authority withdrawal becomes visible on every sheet. Juniors learn that shop drawings are compliance procedures, not judgment events. The word change preceded the delegation. The delegation followed naturally.'},
+  {year:1995,layer:'drafting',impact:44,title:'Engineer\'s Language Training Severs',detail:'As drafter becomes CAD operator, the engineer loses sole informal access to language formation. The BS never contained it. Language formation arrived through daily proximity to the draftsman — every markup, every pushback, every question about what the drawing needed to show. That friction was the training. When the drafter became a cleric, the friction ended. No curriculum replacement was ever proposed.'},
   {year:1997,layer:'drafting',impact:44,title:'Untaping the Sheet',detail:'The physical act that ended the sketch as a formation tool. The last proximity between hand and intent.'},
   {year:2000,layer:'drafting',impact:55,title:'Offshore Drafting Services Scale',detail:'Separation of formation authority from drawing production becomes standard practice.'},
   {year:2002,layer:'drafting',impact:58,title:'Bluebeam Released',detail:'Annotation without comprehension normalized. The markup replaces the conversation.'},
   {year:2003,layer:'drafting',impact:62,title:'Revit — BIM Begins',detail:'3D democratizes viewing, decouples geometry from intent. Drawing ownership fragments across disciplines and vendors.'},
   {year:2008,layer:'drafting',impact:74,title:'Financial Crisis — Propagation Layer Lost',detail:'Mass layoffs eliminate mid-career drafters and designers. The propagation layer. Never fully rebuilt.'},
   {year:2010,layer:'drafting',impact:76,title:'Shop Drawing Proceduralization',detail:'Fully normalized. Modeler and reviewer no longer share a language. Compliance replaces comprehension.'},
+  {year:2006,layer:'drafting',impact:66,title:'Modelers Have Never Seen Shop Drawings',detail:'By Revit\'s arrival, the review has been delegated and proceduralized completely. The modeler inhabits an environment where the fabrication interface does not exist as a visible domain. The blindness is generational and self-perpetuating. This is also the underlying motivation for digital twins — the profession spending capital to reconstruct synthetically the spatial understanding that once developed for free by standing next to the lead during review.'},
   {year:2012,layer:'drafting',impact:80,title:'BIM Mandates Proliferate',detail:'Public sector mandates. Model coordination replaces drawing authorship as primary workflow.'},
   {year:2020,layer:'drafting',impact:90,title:'Remote Work Severs Formation Proximity',detail:'Markup replaces dialogue as primary review mode. The last physical proximity between authority and formation ends.'},
   // VOCATIONAL
   {year:1983,layer:'vocational',impact:16,title:'"A Nation at Risk" Report',detail:'Redirects education policy toward academic tracks. Shop and vocational programs begin systematic defunding.'},
+  {year:1988,layer:'vocational',impact:26,title:'Hickok Technical Institute Closes — Cleveland, OH',detail:'One of hundreds of technical schools closing in this window. The student loan scandals preceded the closures — the institutions absorbed federal loan expansion, credential inflation followed, and the closures erased the capacity without restoring it. The last cohort trained here entered a profession that had already begun its contractual withdrawal from the fabrication interface.'},
   {year:1984,layer:'vocational',impact:20,title:'Perkins Act / Academic Bias Accelerates',detail:'Vocational funding restructured but academic bias deepens. Drafting as a high school subject begins disappearing.'},
   {year:1990,layer:'vocational',impact:32,title:'Shop Class Enrollment Collapses',detail:'Urban school districts. Hands-on formation of spatial and material intuition ends for a generation.'},
   {year:1998,layer:'vocational',impact:42,title:'For-Profit Technical College Surge',detail:'ITT Tech, DeVry, Corinthian expand under expanded federal loan access. Pipeline appears to grow; quality does not.'},
@@ -420,12 +432,19 @@ const allEvents = [
   // FIELD & SHOP
   {year:1980,layer:'field',impact:10,title:'Construction Apprenticeship Peaks',detail:'Union training programs at maximum capacity. Field exposure embedded in career formation.'},
   {year:1982,layer:'field',impact:17,title:'Recession Decimates Apprenticeships',detail:'Programs contract sharply. A cohort of would-be field-trained designers redirects permanently.'},
+  {year:1987,layer:'field',impact:24,title:'AIA A201 Revised — Review Scope First Narrowed',detail:'First formal contractual limitation of the design professional\'s review scope. Downstream of Hyatt 1981. The lead begins legal withdrawal from the fabrication interface. The classroom loses its instructor by contract. First ratchet turn of four.'},
+  {year:1988,layer:'field',impact:27,title:'Downtown Office Dispersal Begins',detail:'AEC firms relocate to suburban campuses and office parks. Proximity to fabricators, print shops, building departments, and cross-trade colleagues dissolves. The informal daily contact that transmitted intent — elevator conversations, print counter exchanges, Tuesday fabricator visits — ends without announcement. No process replaces the ecology.'},
   {year:1986,layer:'field',impact:24,title:'OSHA Site Access Restrictions Tighten',detail:'Engineering interns and junior designers increasingly excluded from active construction sites.'},
-  {year:1993,layer:'field',impact:36,title:'Liability Severs Designer-Fabricator',detail:'Insurance requirements begin separating design firms from fabrication shops. Structural severance.'},
+  {year:1992,layer:'field',impact:34,title:'Cross-Trade Ecology Gone',detail:'By the early 1990s, the informal daily contact between disciplines that prevented RFIs, resolved coordination issues, and maintained cross-trade fluency has dissolved. The mechanical engineer is no longer two floors up. The steel detailer is no longer around the corner. The question that would have been answered in the hall becomes a formal submittal. No one files a report on the loss.'},
+  {year:1993,layer:'field',impact:36,title:'Liability Severs Designer-Fabricator Interface',detail:'Insurance requirements begin formally separating design firms from fabrication shops. The A201 contractual narrowing now has a commercial reinforcement. Structural severance is complete at both the legal and insurance layers.'},
+  {year:1997,layer:'field',impact:45,title:'AIA A201 Revised — Language Further Narrowed',detail:'Second contraction of review scope. Delegation authority expanded. The stamp language has already shifted. The contractual framework now supports what the profession had informally adopted. Second ratchet turn. None reversed.'},
+  {year:2000,layer:'field',impact:50,title:'Reprographics Infrastructure Collapses',detail:'Local blueprint and reprographics firms — the physical home of the shop drawing fold, the revision drawer, the scanning protocol, and the fabricator\'s Tuesday visit — decline from ~30,000 establishments in 1990 to 7,743 by 2000. The fold was not housekeeping. It was information architecture: title block visible without opening, revision status readable in the drawer, critical details facing out by convention. That system had spatial compression, hierarchical visibility, and instant retrieval. It closed with the shop.'},
   {year:2000,layer:'field',impact:48,title:'Digital Delivery Normalizes Remote Design',detail:'Engineers increasingly form decisions without physical exposure to scale, material, or assembly sequence.'},
   {year:2005,layer:'field',impact:58,title:'Union Apprenticeship at Multi-Decade Low',detail:'Relative to construction volume. Trade knowledge concentrating in aging workforce.'},
+  {year:2007,layer:'field',impact:66,title:'AIA A201 Revised — Delegation Expanded',detail:'Third revision. Contractor responsibility maximized further. The EOR\'s formal presence at the fabrication interface is now contractually minimal. Junior review is standard. The transmission event is proceduralized completely. Third ratchet turn.'},
   {year:2008,layer:'field',impact:70,title:'Post-Crisis Field Knowledge Exit',detail:'Experienced field and shop workers exit permanently. The informal mentorship structure does not recover with volume.'},
   {year:2015,layer:'field',impact:79,title:'Skilled Trades Avg. Age Reaches 49',detail:'Knowledge transfer rate from experienced to entry-level at critical threshold. The clock is now visible.'},
+  {year:2017,layer:'field',impact:83,title:'AIA A201 Revised — Contractor Responsibility Maximized',detail:'Fourth and final revision. Section 4.2.7 limits review explicitly to conformance checking only. Accuracy, quantities, dimensions: contractor\'s domain. 36 years after Hyatt, the liability response reaches its logical conclusion. Four ratchet turns. Zero compensating mechanisms filed at any revision. The gatekeeping authority that once required no license — only proximity, exposure, and earned fluency — has been contractually extinguished.'},
   {year:2020,layer:'field',impact:91,title:'COVID — Full Cohort Forms Without Site Contact',detail:'Junior designers lose remaining site exposure during critical formation years. A generation shapes without touch.'},
   // DATA ANCHORS
   {year:1986,layer:'data',impact:14,title:'IBC Baseline — 450 Pages · 106 PMP Holders',detail:'Foundation year. Draftsman as producer. Regulatory surface and process overhead both begin their uninterrupted expansion.'},
@@ -445,7 +464,7 @@ const allEvents = [
   {year:2012,layer:'data',impact:66,title:'The Coasting Era — Oversight Doubles Drafters',detail:'395k managers vs 205k drafters. Ratio 0.52:1. Change orders hit 5.9% of contract value.'},
   {year:2015,layer:'data',impact:72,title:'RFI Frequency: 4.2 per $1M',detail:'Change orders impact 7.2% of contract. Noise saturation. The coordination channel is overwhelmed.'},
   {year:2018,layer:'data',impact:78,title:'IBC Nears 1,000 Pages',detail:'Complexity threshold. Admin load chokes production. The regulatory surface now requires its own specialists.'},
-  {year:2021,layer:'data',impact:83,title:'Managerial Hegemony — 1.2M PMP Holders',detail:'Process becomes the primary product. Production staff now a minority in their own delivery chain.'},
+  {year:2021,layer:'data',impact:83,title:'Managerial Hegemony — 1.2M PMP Holders',detail:'The engineer — linguistically unformed because the drafter became a cleric — now manages the review process that was the last transmission environment, certified by PMP. The credential does not fill the gap left by the drafter. It formalizes the gap as a qualification. 1.2 million people certified to manage a transmission event they were never trained to understand.'},
   {year:2024,layer:'data',impact:92,title:'Total Inversion — 550k Managers / 160k Drafters',detail:'Productivity at 91.2. Change orders at 10.5%. ConTech VC at $10.2B. Peak Coasting. The arc completes.'},
 ].sort((a,b) => a.year !== b.year ? a.year - b.year : a.layer.localeCompare(b.layer));
 
@@ -717,13 +736,24 @@ function buildTimeline() {
     g.style.cursor = 'pointer';
     g.setAttribute('id',`dot-g-${i}`);
 
-    const circle = document.createElementNS('http://www.w3.org/2000/svg','circle');
-    circle.setAttribute('cx',x); circle.setAttribute('cy',y); circle.setAttribute('r','4.5');
-    circle.setAttribute('fill','#161210'); circle.setAttribute('stroke',c);
-    circle.setAttribute('stroke-width','0.8'); circle.setAttribute('opacity','0.35');
-    circle.setAttribute('id',`dot-${i}`);
-    circle.style.transition = 'all 0.2s';
-    g.appendChild(circle);
+    let dotEl;
+    if (ev.origin) {
+      // Diamond shape for origin event
+      dotEl = document.createElementNS('http://www.w3.org/2000/svg','polygon');
+      const s = 6;
+      dotEl.setAttribute('points',`${x},${y-s} ${x+s},${y} ${x},${y+s} ${x-s},${y}`);
+      dotEl.setAttribute('fill','#161210'); dotEl.setAttribute('stroke','#c04040');
+      dotEl.setAttribute('stroke-width','1.5'); dotEl.setAttribute('opacity','0.7');
+    } else {
+      dotEl = document.createElementNS('http://www.w3.org/2000/svg','circle');
+      dotEl.setAttribute('cx',x); dotEl.setAttribute('cy',y); dotEl.setAttribute('r','4.5');
+      dotEl.setAttribute('fill','#161210'); dotEl.setAttribute('stroke',c);
+      dotEl.setAttribute('stroke-width','0.8'); dotEl.setAttribute('opacity','0.35');
+    }
+    dotEl.setAttribute('id',`dot-${i}`);
+    dotEl.style.transition = 'all 0.2s';
+    const circle = dotEl; // keep reference name for hover handlers
+    g.appendChild(dotEl);
 
     const title = document.createElementNS('http://www.w3.org/2000/svg','title');
     title.textContent = `${ev.year} · ${ev.title}`;
@@ -732,12 +762,14 @@ function buildTimeline() {
     g.addEventListener('mouseenter', () => {
       hoveredEvent = ev;
       showEventCard(ev);
-      circle.setAttribute('r','6.5');
+      if (ev.origin) dotEl.setAttribute('points',`${x},${y-9} ${x+9},${y} ${x},${y+9} ${x-9},${y}`);
+      else circle.setAttribute('r','6.5');
     });
     g.addEventListener('mouseleave', () => {
       hoveredEvent = null;
       showEventCard(getCurrentEvent());
-      circle.setAttribute('r','4.5');
+      if (ev.origin) dotEl.setAttribute('points',`${x},${y-6} ${x+6},${y} ${x},${y+6} ${x-6},${y}`);
+      else circle.setAttribute('r','4.5');
     });
     g.addEventListener('click', () => {
       stopPlay();
@@ -766,7 +798,10 @@ function buildEventGrid() {
       item.className = 'event-grid-item';
       item.setAttribute('id',`grid-${lk}-${i}`);
       item.style.opacity = '0.2';
-      item.innerHTML = `<div class="event-grid-dot" style="background:${c}"></div><div><span class="event-grid-year" style="color:${c}">${ev.year} </span><span class="event-grid-title">${ev.title}</span></div>`;
+      const dc = ev.origin ? '#c04040' : c;
+      const dotCls = ev.origin ? 'event-grid-dot origin' : 'event-grid-dot';
+      const titleCls = ev.origin ? 'event-grid-title origin-title' : 'event-grid-title';
+      item.innerHTML = `<div class="${dotCls}" style="background:${dc}"></div><div><span class="event-grid-year" style="color:${dc}">${ev.year} </span><span class="${titleCls}">${ev.title}</span></div>`;
       item.addEventListener('click', () => {
         stopPlay(); currentYear = ev.year;
         document.getElementById('year-slider').value = ev.year;
@@ -789,12 +824,12 @@ function getCurrentEvent() {
 
 function showEventCard(ev) {
   if (!ev) return;
-  const c = LAYERS[ev.layer].color;
+  const c = ev.origin ? '#c04040' : LAYERS[ev.layer].color;
   const card = document.getElementById('event-card');
   card.style.borderLeftColor = c;
-  document.getElementById('event-layer-label').textContent = LAYERS[ev.layer].label;
+  document.getElementById('event-layer-label').textContent = ev.origin ? 'ORIGIN EVENT — ALL LAYERS — UNREVERSED' : LAYERS[ev.layer].label;
   document.getElementById('event-layer-label').style.color = c;
-  document.getElementById('event-impact').textContent = `IMPACT ${ev.impact}`;
+  document.getElementById('event-impact').textContent = ev.origin ? `IMPACT ${ev.impact} · MULTI-EVENT · NO COMPENSATING RESPONSE` : `IMPACT ${ev.impact}`;
   document.getElementById('event-title').textContent = `${ev.year} — ${ev.title}`;
   document.getElementById('event-detail').textContent = ev.detail;
 }
@@ -931,8 +966,10 @@ function updateTimeline(year) {
     const dot = document.getElementById(`dot-${i}`);
     if (!dot) return;
     const active = ev.year <= year;
-    dot.setAttribute('fill', active ? LAYERS[ev.layer].color : '#161210');
-    dot.setAttribute('stroke-width', active ? '1.5' : '0.8');
+    const col = ev.origin ? '#c04040' : LAYERS[ev.layer].color;
+    dot.setAttribute('fill', active ? col : '#161210');
+    dot.setAttribute('stroke', ev.origin ? '#c04040' : LAYERS[ev.layer].color);
+    dot.setAttribute('stroke-width', active ? (ev.origin ? '2' : '1.5') : '0.8');
     dot.setAttribute('opacity', active ? '1' : '0.35');
   });
 
