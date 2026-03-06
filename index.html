@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Design Intent Coherence — Structural Observation Instrument</title>
+<title>Design Room Stress Gage</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -158,7 +158,7 @@ input[type=range] { flex: 1; cursor: pointer; }
 
 <div class="header">
   <div class="eyebrow">Structural Observation Instrument</div>
-  <div class="title">Design Intent Coherence</div>
+  <div class="title">Design Room Stress Gage</div>
   <div class="paper-titles">On the Limits of Design Intent &nbsp;·&nbsp; Why Fragmentation Is Inevitable in Scaled Delivery</div>
   <div class="sub">Inverted Pressure Index · Multi-Layer Structural Analysis · 1980–2024</div>
 </div>
@@ -244,7 +244,8 @@ input[type=range] { flex: 1; cursor: pointer; }
     <div class="gauge-premise">
       A line had to earn its place on the sheet.<br>
       The medium enforced that. The medium changed.<br>
-      <span class="reminder">Documentation grew. Understanding didn't travel with it.</span>
+      <span class="reminder">Documentation grew. Understanding didn't travel with it.</span><br>
+      <span style="color:#9a6a40;font-style:italic;margin-top:3px;display:block;">The system did not fail. It started charging.</span>
     </div>
 
     <div class="deficit-box">
@@ -399,7 +400,7 @@ const ERAS = [
 
 const allEvents = [
   // ORIGIN EVENT
-  {year:1981,layer:'field',impact:12,origin:true,title:'Hyatt Regency Collapse — Origin Event',detail:'Kansas City. 114 deaths. EOR loses license for failure at the fabrication interface. The profession learns the right lesson. The liability response removes the first brick from the training environment — without anyone recognizing it as curriculum extraction. Legal event. Institutional event. Training event. Language event. Cultural event. Compounding event. First of many irreversible extractions. No compensating response ever filed at any subsequent revision.'},
+  {year:1981,layer:'field',impact:18,origin:true,title:'Hyatt Regency Collapse — Origin Event',detail:'Kansas City. 114 deaths. EOR loses license for failure at the fabrication interface. The profession learns the right lesson. The liability response removes the first brick from the training environment — without anyone recognizing it as curriculum extraction. Legal event. Institutional event. Training event. Language event. Cultural event. Compounding event. First of many irreversible extractions. No compensating response ever filed at any subsequent revision.'},
   // DRAFTING ROOM
   {year:1982,layer:'drafting',impact:18,title:'AutoCAD 1.0 Released',detail:'Board drafting begins displacement. Drafters become operators rather than authors.'},
   {year:1985,layer:'drafting',impact:22,title:'CAD Adoption Accelerates',detail:'Senior drafters retrain or exit in large firms. Institutional memory begins fragmenting.'},
@@ -407,12 +408,13 @@ const allEvents = [
   {year:1992,layer:'drafting',impact:36,title:'Snake River Falls — Last Dual Transmission',detail:'Cedar Point. First CAD project started manually, completed in CAD after hours. The tool transition lived from both sides simultaneously. Geometry transferred. Everything the line carried beyond geometry — proportion, resistance, embedded judgment — had no equivalent in the new medium. Most drafters never ran the comparison. They just came in the next morning and opened the software.'},
   {year:1994,layer:'drafting',impact:42,title:'Full CAD Displacement',detail:'Last generation trained on boards begins retiring. Hand sketching ends in production. Transmission pathway closes.'},
   {year:1990,layer:'drafting',impact:33,title:'Stamp Language Shifts — "Approved" Disappears',detail:'Review stamps move from "Approved" to "No Exceptions Taken," "Furnish As Noted," "Reviewed." The authority withdrawal becomes visible on every sheet. Juniors learn that shop drawings are compliance procedures, not judgment events. The word change preceded the delegation. The delegation followed naturally.'},
-  {year:1995,layer:'drafting',impact:44,title:'Engineer\'s Language Training Severs',detail:'As drafter becomes CAD operator, the engineer loses sole informal access to language formation. The BS never contained it. Language formation arrived through daily proximity to the draftsman — every markup, every pushback, every question about what the drawing needed to show. That friction was the training. When the drafter became a cleric, the friction ended. No curriculum replacement was ever proposed.'},
-  {year:1997,layer:'drafting',impact:44,title:'Untaping the Sheet',detail:'The physical act that ended the sketch as a formation tool. The last proximity between hand and intent.'},
+  {year:1990,layer:'drafting',impact:34,title:'Untaping the Sheet',detail:'Not an event. A threshold crossed universally and individually. The first erosion of the drafter\'s gatekeeping responsibility. The first gap between judgment and proximity to formation. No announcement. No memo. It happened in every office at a slightly different moment — the same crossing, the same loss, the same silence after.'},
+  {year:1995,layer:'drafting',impact:48,title:'Engineer\'s Language Training Severs',detail:'As drafter becomes CAD operator, the engineer loses sole informal access to language formation. The BS never contained it. Language formation arrived through daily proximity to the draftsman — every markup, every pushback, every question about what the drawing needed to show. That friction was the training. When the drafter became a cleric, the friction ended. No curriculum replacement was ever proposed.'},
+  {year:1997,layer:'drafting',impact:60,title:'Decoupling — Engineers Become Modelers',detail:'Engineering graduates enter production modeling without exposure to drafting language, shop drawing formation, or apprenticeship transmission. Authority separates from proximity to formation.'},
   {year:2000,layer:'drafting',impact:55,title:'Offshore Drafting Services Scale',detail:'Separation of formation authority from drawing production becomes standard practice.'},
-  {year:2002,layer:'drafting',impact:58,title:'Bluebeam Released',detail:'Annotation without comprehension normalized. The markup replaces the conversation.'},
+  {year:2002,layer:'drafting',impact:65,title:'Bluebeam Released',detail:'Annotation without comprehension normalized. The markup replaces the conversation.'},
   {year:2003,layer:'drafting',impact:62,title:'Revit — BIM Begins',detail:'3D democratizes viewing, decouples geometry from intent. Drawing ownership fragments across disciplines and vendors.'},
-  {year:2008,layer:'drafting',impact:74,title:'Financial Crisis — Propagation Layer Lost',detail:'Mass layoffs eliminate mid-career drafters and designers. The propagation layer. Never fully rebuilt.'},
+  {year:2008,layer:'drafting',impact:82,title:'Financial Crisis — Propagation Layer Lost',detail:'Mass layoffs eliminate mid-career drafters and designers. The propagation layer. Never fully rebuilt.'},
   {year:2010,layer:'drafting',impact:76,title:'Shop Drawing Proceduralization',detail:'Fully normalized. Modeler and reviewer no longer share a language. Compliance replaces comprehension.'},
   {year:2006,layer:'drafting',impact:66,title:'Modelers Have Never Seen Shop Drawings',detail:'By Revit\'s arrival, the review has been delegated and proceduralized completely. The modeler inhabits an environment where the fabrication interface does not exist as a visible domain. The blindness is generational and self-perpetuating. This is also the underlying motivation for digital twins — the profession spending capital to reconstruct synthetically the spatial understanding that once developed for free by standing next to the lead during review.'},
   {year:2012,layer:'drafting',impact:80,title:'BIM Mandates Proliferate',detail:'Public sector mandates. Model coordination replaces drawing authorship as primary workflow.'},
@@ -463,14 +465,14 @@ const allEvents = [
   {year:2009,layer:'data',impact:68,title:'Software Ribbon Interface Introduced',detail:'Command-line literacy begins to evaporate. The interface removes the requirement to know what you are asking the tool to do.'},
   {year:2012,layer:'data',impact:66,title:'The Coasting Era — Oversight Doubles Drafters',detail:'395k managers vs 205k drafters. Ratio 0.52:1. Change orders hit 5.9% of contract value.'},
   {year:2015,layer:'data',impact:72,title:'RFI Frequency: 4.2 per $1M',detail:'Change orders impact 7.2% of contract. Noise saturation. The coordination channel is overwhelmed.'},
-  {year:2018,layer:'data',impact:78,title:'IBC Nears 1,000 Pages',detail:'Complexity threshold. Admin load chokes production. The regulatory surface now requires its own specialists.'},
+  {year:2018,layer:'data',impact:88,title:'IBC Nears 1,000 Pages',detail:'Complexity threshold. Admin load chokes production. The regulatory surface now requires its own specialists.'},
   {year:2021,layer:'data',impact:83,title:'Managerial Hegemony — 1.2M PMP Holders',detail:'The engineer — linguistically unformed because the drafter became a cleric — now manages the review process that was the last transmission environment, certified by PMP. The credential does not fill the gap left by the drafter. It formalizes the gap as a qualification. 1.2 million people certified to manage a transmission event they were never trained to understand.'},
-  {year:2024,layer:'data',impact:92,title:'Total Inversion — 550k Managers / 160k Drafters',detail:'Productivity at 91.2. Change orders at 10.5%. ConTech VC at $10.2B. Peak Coasting. The arc completes.'},
+  {year:2024,layer:'data',impact:96,title:'Total Inversion — 550k Managers / 160k Drafters',detail:'Productivity at 91.2. Change orders at 10.5%. ConTech VC at $10.2B. Peak Coasting. The arc completes.'},
 ].sort((a,b) => a.year !== b.year ? a.year - b.year : a.layer.localeCompare(b.layer));
 
 // ── PRESSURE MODEL ───────────────────────────────────────────────────────────
 
-const weights = {drafting:0.35, vocational:0.25, field:0.25, data:0.15};
+const weights = {drafting:0.40, vocational:0.20, field:0.25, data:0.15};
 
 function getLayerPressure(layerKey, year) {
   const past = allEvents.filter(e => e.layer === layerKey && e.year <= year);
