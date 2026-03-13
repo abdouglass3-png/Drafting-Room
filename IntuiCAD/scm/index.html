@@ -6,6 +6,56 @@
 <!--[if IE 5]>
 <style type="text/css"> 
 #sidebar1 { width: 170px; }
+
+/* ===== Mobile Responsive Additions ===== */
+img { max-width: 100%; height: auto; }
+
+@media screen and (max-width: 800px) {
+  #container { width: 100%; }
+}
+
+@media screen and (max-width: 600px) {
+  #container #branding img { width: 100%; }
+  #container #sidebar1 {
+    float: none;
+    width: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  #container #mainContent {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  #container #mainNav {
+    height: auto !important;
+    padding: 4px 0;
+  }
+  #container #mainNav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #container #mainNav ul li {
+    display: inline-block !important;
+    padding: 4px 8px !important;
+    line-height: 1.8em !important;
+  }
+  #container #siteInfo {
+    height: auto !important;
+    padding: 8px 0;
+  }
+  #container #siteInfo ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #container #siteInfo ul li {
+    display: inline-block !important;
+    padding: 2px 4px !important;
+    line-height: 2em !important;
+  }
+}
 </style>
 <![endif]--><!--[if IE]>
 <style type="text/css"> 
