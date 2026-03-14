@@ -3,65 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Structural Component Manager</title>
-<!--[if IE 5]>
-<style type="text/css"> 
-#sidebar1 { width: 170px; }
-
-/* ===== Mobile Responsive Additions ===== */
-img { max-width: 100%; height: auto; }
-
-@media screen and (max-width: 800px) {
-  #container { width: 100%; }
-}
-
-@media screen and (max-width: 600px) {
-  #container #branding img { width: 100%; }
-  #container #sidebar1 {
-    float: none;
-    width: 100% !important;
-    margin-left: 0;
-    margin-right: 0;
-    box-sizing: border-box;
-  }
-  #container #mainContent {
-    width: 100% !important;
-    box-sizing: border-box;
-  }
-  #container #mainNav {
-    height: auto !important;
-    padding: 4px 0;
-  }
-  #container #mainNav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  #container #mainNav ul li {
-    display: inline-block !important;
-    padding: 4px 8px !important;
-    line-height: 1.8em !important;
-  }
-  #container #siteInfo {
-    height: auto !important;
-    padding: 8px 0;
-  }
-  #container #siteInfo ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  #container #siteInfo ul li {
-    display: inline-block !important;
-    padding: 2px 4px !important;
-    line-height: 2em !important;
-  }
-}
-</style>
-<![endif]--><!--[if IE]>
-<style type="text/css"> 
-#mainContent { zoom: 1; }
-</style>
-<![endif]-->
 <style type="text/css">
 <!--
 /* v1.0 | 20080212 */
@@ -86,7 +27,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
 	font-family: "Calibri", Trebuchet MS, Helvetica, Arial, sans-serif;
 	background-color:#606060;
-	background-image:url(backgroundGradient.gif);
+	background-image:url(../backgroundGradient.gif);
 	background-position:center;
 	background-repeat:repeat-y;
 	text-align:center;
@@ -266,11 +207,59 @@ blockquote {
 	float: left;
 }
 .clearfloat {
-    clear:both;
+	clear:both;
 	margin:0;
 	padding:0;
 	font-size: 1px;
 	line-height: 0px;
+}
+img { max-width: 100%; height: auto; }
+
+@media screen and (max-width: 800px) {
+  #container { width: 100%; }
+}
+
+@media screen and (max-width: 600px) {
+  #container #branding img { width: 100%; }
+  #container #sidebar1 {
+    float: none;
+    width: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  #container #mainContent {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  #container #mainNav {
+    height: auto !important;
+    padding: 4px 0;
+  }
+  #container #mainNav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #container #mainNav ul li {
+    display: inline-block !important;
+    padding: 4px 8px !important;
+    line-height: 1.8em !important;
+  }
+  #container #siteInfo {
+    height: auto !important;
+    padding: 8px 0;
+  }
+  #container #siteInfo ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #container #siteInfo ul li {
+    display: inline-block !important;
+    padding: 2px 4px !important;
+    line-height: 2em !important;
+  }
 }
 -->
 </style>
@@ -305,80 +294,55 @@ function MM_preloadImages() { //v3.0
 </div>
 <!-- end mainNav div -->
 <div id="sidebar1">
-  <p><img src="oneRedBlock.gif" alt="&quot;&quot;" class="centerThis" width="140" height="35" /><img src="SCM-1.JPG" width="140" height="210" alt="&quot;Nike&quot; Truss - GBIA Concourse" /></p>
+  <p><img src="oneRedBlock.gif" alt="" class="centerThis" width="140" height="35" /><img src="SCM-1.JPG" width="140" height="210" alt="Nike Truss - GBIA Concourse" /></p>
   <p>&nbsp; </p>
   <ul>
     <li><a href="SCMDSetup.html">DRAWING SETUP</a></li>
-<li><a href="SCMSymbols.html">SYMBOLS</a></li>
-<li><a href="SCMSteel.html">STEEL</a></li>
-<li><a href="SCMConcrete.html">CONCRETE</a></li>
-<li><a href="SCMMasonry.html">MASONRY</a></li>
-<li><a href="SCMWood.html">WOOD</a></li>
-<li><a href="SCMSLH.html">S/L/H</a></li>
-<li><a href="SCMHatching.html">HATCHING</a></li>
-</ul>
+    <li><a href="SCMSymbols.html">SYMBOLS</a></li>
+    <li><a href="SCMSteel.html">STEEL</a></li>
+    <li><a href="SCMConcrete.html">CONCRETE</a></li>
+    <li><a href="SCMMasonry.html">MASONRY</a></li>
+    <li><a href="SCMWood.html">WOOD</a></li>
+    <li><a href="SCMSLH.html">S/L/H</a></li>
+    <li><a href="SCMHatching.html">HATCHING</a></li>
+    <li><a href="SCMVideos.html">VIDEOS</a></li>
+  </ul>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <p><img src="SCM-2.JPG" alt="GBIA Concourse" width="140" height="210" /><img src="oneRedBlock.gif" alt="&quot;&quot;" class="centerThis" width="140" height="35" /></p>
+  <p><img src="SCM-2.JPG" alt="GBIA Concourse" width="140" height="210" /><img src="oneRedBlock.gif" alt="" class="centerThis" width="140" height="35" /></p>
 </div>
 <!--end sidebar1 div-->
 <div id="mainContent">
 <h1>Structural Component Manager</h1>
 <p>IntuiCAD SCM benefits from a most extensive research and &ldquo;testing&rdquo; period . . . over 15 years!  Many of the tools in our Structural Component Manager have participated in some grand projects indeed.  From the <a href="http://pressroom.ups.com/Video/ci.UPS+Worldport+b-roll.Video" class="textLink" target="_blank">UPS Worldport</a> in Louisville, KY and <a href="http://www.guangzhouairportonline.com/" class="textLink" target="_blank">Guangzhou Baiyun International Airport</a> in China, to manufacturing facilities, power plants, schools and municipal buildings, they have been refined and redeployed without relief.</p>
-<p>The three BIG reasons and lots of little ones) you need IntuiCAD SCM.</p>
+<p>The three BIG reasons (and lots of little ones) you need IntuiCAD SCM.</p>
 <h2>Product Management</h2>
 <ol>
-<li>
-  <p>IntuiCAD SCM allows a company to spread a very high level of uniformity throughout the office.  Centralized access and singular sourcing of resources ensures that consistency is almost unavoidable.</p>
-</li>
-<li>
-  <p>IntuiCAD SCM does not require regular maintainance or management, leaving more people more time to produce the company's real product.</p>
-</li>
-<li>
-  <p>IntuiCAD SCM is predictable in both stability and function.  The core programming is handled with AutoLisp, a longtime favorite of CAD users. Our tools function retroactively through AutoCad 2005.</p>
-</li>
-<li>
-  <p>IntuiCAD SCM has been designed and field tested with input from some of the largest (and smallest) consultants in the country in actual project conditions and has a stellar record of increasing profitability and performance.</p>
-</li>
-<li>
-  <p>IntuiCAD SCM can be customized to provide a template for managing specialized client CAD requirements.</p>
-</li>
+<li><p>IntuiCAD SCM allows a company to spread a very high level of uniformity throughout the office. Centralized access and singular sourcing of resources ensures that consistency is almost unavoidable.</p></li>
+<li><p>IntuiCAD SCM does not require regular maintenance or management, leaving more people more time to produce the company's real product.</p></li>
+<li><p>IntuiCAD SCM is predictable in both stability and function. The core programming is handled with AutoLisp, a longtime favorite of CAD users. Our tools function retroactively through AutoCad 2005.</p></li>
+<li><p>IntuiCAD SCM has been designed and field tested with input from some of the largest (and smallest) consultants in the country in actual project conditions and has a stellar record of increasing profitability and performance.</p></li>
+<li><p>IntuiCAD SCM can be customized to provide a template for managing specialized client CAD requirements.</p></li>
 </ol>
 <h2>Financial</h2>
 <ol>
-<li>
-  <p>IntuiCAD SCM will measurably increase user productivity.  Mundane tasks (and discussion) are prime targets of SCM, leaving the time to be more productively used.</p>
-</li>
-<li>
-  <p>IntuiCAD SCM can drastically decrease or often eliminate new employee CAD training.  Since all customizations are designed outside of AutoCad, the employee is free to use the core CAD settings with which they may be familiar.</p>
-</li>
-<li>
-  <p>IntuiCAD SCM can reduce costs associated with CAD administration by consolidating company resources.  No more 4 inch thick binders of typical details and CAD manuals.</p>
-</li>
-<li>
-  <p>IntuiCAD SCM works for the company even after the drawing is created.  By incorporating editing features into the block design, many items high on the &ldquo;mark-up&rdquo; lists are reduced to a couple of clicks.</p>
-</li>
+<li><p>IntuiCAD SCM will measurably increase user productivity. Mundane tasks (and discussion) are prime targets of SCM, leaving the time to be more productively used.</p></li>
+<li><p>IntuiCAD SCM can drastically decrease or often eliminate new employee CAD training. Since all customizations are designed outside of AutoCad, the employee is free to use the core CAD settings with which they may be familiar.</p></li>
+<li><p>IntuiCAD SCM can reduce costs associated with CAD administration by consolidating company resources. No more 4 inch thick binders of typical details and CAD manuals.</p></li>
+<li><p>IntuiCAD SCM works for the company even after the drawing is created. By incorporating editing features into the block design, many items high on the &ldquo;mark-up&rdquo; lists are reduced to a couple of clicks.</p></li>
 </ol>
 <h2>Flexibility</h2>
 <ol>
-<li>
-  <p>IntuiCAD SCM blocks are intuitively functional and adapted to users of all experience.</p>
-</li>
-<li>
-  <p>IntuiCAD SCM can be adapted to ANY company standard.</p>
-</li>
-<li>
-  <p>IntuiCAD SCM can be customized to handle specific clients.</p>
-</li>
-<li>
-  <p>IntuiCAD SCM comes with three synchronized tool formats.  No matter one's preference, each user has equal access to the same centralized tools.</p>
-</li>
-<li>
-  <p>IntuiCAD SCM can be linked between departments without conflict.</p>
-</li>
-</ol></div>
+<li><p>IntuiCAD SCM blocks are intuitively functional and adapted to users of all experience.</p></li>
+<li><p>IntuiCAD SCM can be adapted to ANY company standard.</p></li>
+<li><p>IntuiCAD SCM can be customized to handle specific clients.</p></li>
+<li><p>IntuiCAD SCM comes with three synchronized tool formats. No matter one's preference, each user has equal access to the same centralized tools.</p></li>
+<li><p>IntuiCAD SCM can be linked between departments without conflict.</p></li>
+</ol>
+<p style="margin-top:20px;font-size:0.85em;color:#606060;"><a href="../../Design_Intent.pdf" target="_blank" class="textLink">Design Intent as a Systemic Capability at Scale</a></p>
+</div>
 <!-- end mainContent div -->
-<div align="center"><img src="3redBlocks.gif" alt="&quot;&quot;" width="265" height="35" /></div>
+<div align="center"><img src="3redBlocks.gif" alt="" width="265" height="35" /></div>
 <div id="siteInfo" align="center">
 <ul>
 <li><a href="../../index.html">HOME</a></li>
@@ -395,7 +359,8 @@ function MM_preloadImages() { //v3.0
 </ul>
 <p>&copy;Copyright 2009 IntuiCAD, LLC. All rights reserved.</p>
 </div>
-<!-- end siteInfo div --></div>
-<p><!-- end container div --></p>
+<!-- end siteInfo div -->
+</div>
+<!-- end container div -->
 </body>
 </html>
