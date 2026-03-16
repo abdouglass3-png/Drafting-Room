@@ -1,0 +1,175 @@
+UPS Hub 2000
+
+Phase 1 (Northwest arm North core)
+50 sheets (approx. 500,000 sq ft)
+Cover
+2 sheets typical details (1 concrete, 1 steel)
+24 - 1/16"=1'-0" scale plans
+4 sheets foundation sections & details
+7 sheets steel sections & details
+8 sheets joists, loading and wind diagrams
+
+US Graph data for timeline
+
+CONTROL FUNCTION REORGANIZATION
+
+1. IBC Page Count (Code Density)
+
+Sources: ICBO/ICC Historical Archives
+
+Data: 1986: 450, 1987: 450, 1988: 450, 1989: 480, 1990: 480, 1991: 510, 1992: 510, 1993: 510, 1994: 550, 1995: 550, 1996: 550, 1997: 580, 1998: 580, 1999: 580, 2000: 600, 2001: 600, 2002: 600, 2003: 650, 2004: 650, 2005: 650, 2006: 710, 2007: 710, 2008: 710, 2009: 780, 2010: 780, 2011: 780, 2012: 850, 2013: 850, 2014: 850, 2015: 900, 2016: 900, 2017: 900, 2018: 950, 2019: 950, 2020: 950, 2021: 1020, 2022: 1020, 2023: 1020, 2024: 1100
+
+2. PMP Active Certification Holders (Process Management)
+
+Sources: Project Management Institute (PMI) Fact Sheets
+
+Data: 1986: 106, 1987: 154, 1988: 212, 1989: 305, 1990: 440, 1991: 610, 1992: 830, 1993: 1100, 1994: 1600, 1995: 2200, 1996: 2800, 1997: 4100, 1998: 6500, 1999: 15000, 2000: 27000, 2001: 40000, 2002: 52000, 2003: 76000, 2004: 102000, 2005: 180000, 2006: 221000, 2007: 262000, 2008: 315000, 2009: 360000, 2010: 412000, 2011: 467000, 2012: 518000, 2013: 588000, 2014: 642000, 2015: 692000, 2016: 741000, 2017: 818000, 2018: 890000, 2019: 980000, 2020: 1050000, 2021: 1200000, 2022: 1300000, 2023: 1450000, 2024: 1600000
+
+3. Federal Acquisition Regulation (FAR) Page Count (Bureaucratic Load)
+
+Sources: Office of the Federal Register / GPO
+
+Data: 1986: 4800, 1990: 5200, 1995: 5900, 2000: 6400, 2005: 7100, 2010: 7400, 2015: 7800, 2020: 8100, 2024: 8250
+
+HUMAN INFRASTRUCTURE SIGNALS
+
+1. Architectural and Civil Drafters (Production Staff in Thousands)
+
+Sources: Bureau of Labor Statistics (BLS) OES
+
+Data: 1990: 320, 1992: 318, 1994: 310, 1996: 295, 1998: 288, 2000: 270, 2002: 260, 2004: 245, 2006: 235, 2008: 220, 2010: 210, 2012: 205, 2014: 195, 2016: 188, 2018: 180, 2020: 175, 2022: 168, 2024: 160
+
+2. Construction Managers (Oversight Staff in Thousands)
+
+Sources: BLS OES
+
+Data: 1990: 200, 1992: 215, 1994: 230, 1996: 250, 1998: 275, 2000: 300, 2002: 315, 2004: 330, 2006: 350, 2008: 375, 2010: 380, 2012: 395, 2014: 405, 2016: 420, 2018: 450, 2020: 480, 2022: 510, 2024: 550
+
+3. Engineering Bachelor's Degrees (Technical Pipeline in Thousands)
+
+Sources: National Center for Education Statistics (NCES)
+
+Data: 1986: 77, 1988: 71, 1990: 65, 1992: 63, 1994: 63, 1996: 64, 1998: 62, 2000: 60, 2002: 68, 2004: 74, 2006: 74, 2008: 74, 2010: 78, 2012: 88, 2014: 98, 2016: 112, 2018: 126, 2020: 142, 2022: 152
+
+PRODUCTION CONSEQUENCE / OUTPUT CHURN
+
+1. RFI Frequency (Requests per $1M Project Value)
+
+Sources: Navigant / Arcadis / Industry Benchmarks
+
+Data: 1990: 0.8, 1995: 1.1, 2000: 1.8, 2005: 2.4, 2010: 3.4, 2015: 4.2, 2020: 5.3, 2024: 5.9
+
+2. Construction Arbitration Filings (AAA)
+
+Sources: American Arbitration Association (AAA) Annual Reports
+
+Data: 1986: 3100, 1990: 3600, 1995: 4200, 2000: 4500, 2005: 6100, 2010: 8400, 2015: 9800, 2020: 11500, 2024: 13200
+
+3. Change Order Cost Impact (% of Contract)
+
+Sources: CII (Construction Industry Institute) Historical Data
+
+Data: 1986: 2.2, 1990: 2.5, 1995: 3.1, 2000: 4.0, 2005: 4.8, 2010: 5.9, 2015: 7.2, 2020: 8.8, 2024: 10.5
+
+MACRO SCALE CONTEXT
+
+1. Total Construction Put-in-Place (Unadjusted $B)
+
+Sources: U.S. Census Bureau (C30/FRED)
+
+Data: 1986: 390, 1988: 415, 1990: 440, 1992: 450, 1994: 520, 1996: 600, 1998: 680, 2000: 830, 2002: 860, 2004: 1000, 2006: 1160, 2008: 1080, 2010: 810, 2012: 850, 2014: 990, 2016: 1190, 2018: 1300, 2020: 1450, 2022: 1850, 2024: 2100
+
+2. Construction Productivity Index (1987=100)
+
+Sources: BLS Labor Productivity and Costs (Annual)
+
+Data: 1987: 100, 1988: 99.8, 1989: 99.5, 1990: 99.4, 1991: 99.2, 1992: 99.0, 1993: 98.9, 1994: 98.8, 1995: 98.8, 1996: 98.5, 1997: 98.1, 1998: 98.0, 1999: 98.1, 2000: 98.0, 2001: 97.5, 2002: 97.0, 2003: 96.8, 2004: 96.6, 2005: 96.5, 2006: 96.1, 2007: 95.8, 2008: 95.5, 2009: 95.2, 2010: 95.2, 2011: 95.0, 2012: 94.7, 2013: 94.5, 2014: 94.2, 2015: 94.0, 2016: 93.7, 2017: 93.4, 2018: 93.0, 2019: 92.8, 2020: 92.5, 2021: 92.2, 2022: 91.8, 2023: 91.5, 2024: 91.2
+
+3. ConTech Venture Capital Investment ($M)
+
+Sources: Pitchbook / Cemex Ventures
+
+Data: 1995: 10, 1998: 80, 2000: 150, 2005: 280, 2010: 420, 2012: 800, 2014: 1200, 2016: 2500, 2018: 4800, 2020: 4500, 2022: 9200, 2024: 10200
+
+EU Graph data for timeline
+
+TIER 1 — CONTROL FUNCTION REORGANIZATION
+
+1. IBC Page Count (Code Density)
+
+Sources: ICBO/ICC Historical Archives
+
+Data: 1986: 450, 1987: 450, 1988: 450, 1989: 480, 1990: 480, 1991: 510, 1992: 510, 1993: 510, 1994: 550, 1995: 550, 1996: 550, 1997: 580, 1998: 580, 1999: 580, 2000: 600, 2001: 600, 2002: 600, 2003: 650, 2004: 650, 2005: 650, 2006: 710, 2007: 710, 2008: 710, 2009: 780, 2010: 780, 2011: 780, 2012: 850, 2013: 850, 2014: 850, 2015: 900, 2016: 900, 2017: 900, 2018: 950, 2019: 950, 2020: 950, 2021: 1020, 2022: 1020, 2023: 1020, 2024: 1100
+
+2. PMP Active Certification Holders (Process Management)
+
+Sources: Project Management Institute (PMI) Fact Sheets
+
+Data: 1986: 106, 1987: 154, 1988: 212, 1989: 305, 1990: 440, 1991: 610, 1992: 830, 1993: 1100, 1994: 1600, 1995: 2200, 1996: 2800, 1997: 4100, 1998: 6500, 1999: 15000, 2000: 27000, 2001: 40000, 2002: 52000, 2003: 76000, 2004: 102000, 2005: 180000, 2006: 221000, 2007: 262000, 2008: 315000, 2009: 360000, 2010: 412000, 2011: 467000, 2012: 518000, 2013: 588000, 2014: 642000, 2015: 692000, 2016: 741000, 2017: 818000, 2018: 890000, 2019: 980000, 2020: 1050000, 2021: 1200000, 2022: 1300000, 2023: 1450000, 2024: 1600000
+
+3. Federal Acquisition Regulation (FAR) Page Count (Bureaucratic Load)
+
+Sources: Office of the Federal Register / GPO
+
+Data: 1986: 4800, 1990: 5200, 1995: 5900, 2000: 6400, 2005: 7100, 2010: 7400, 2015: 7800, 2020: 8100, 2024: 8250
+
+HUMAN INFRASTRUCTURE SIGNALS
+
+1. Architectural and Civil Drafters (Production Staff in Thousands)
+
+Sources: Bureau of Labor Statistics (BLS) OES
+
+Data: 1990: 320, 1992: 318, 1994: 310, 1996: 295, 1998: 288, 2000: 270, 2002: 260, 2004: 245, 2006: 235, 2008: 220, 2010: 210, 2012: 205, 2014: 195, 2016: 188, 2018: 180, 2020: 175, 2022: 168, 2024: 160
+
+2. Construction Managers (Oversight Staff in Thousands)
+
+Sources: BLS OES
+
+Data: 1990: 200, 1992: 215, 1994: 230, 1996: 250, 1998: 275, 2000: 300, 2002: 315, 2004: 330, 2006: 350, 2008: 375, 2010: 380, 2012: 395, 2014: 405, 2016: 420, 2018: 450, 2020: 480, 2022: 510, 2024: 550
+
+3. Engineering Bachelor's Degrees (Technical Pipeline in Thousands)
+
+Sources: National Center for Education Statistics (NCES)
+
+Data: 1986: 77, 1988: 71, 1990: 65, 1992: 63, 1994: 63, 1996: 64, 1998: 62, 2000: 60, 2002: 68, 2004: 74, 2006: 74, 2008: 74, 2010: 78, 2012: 88, 2014: 98, 2016: 112, 2018: 126, 2020: 142, 2022: 152
+
+PRODUCTION CONSEQUENCE / OUTPUT CHURN
+
+1. RFI Frequency (Requests per $1M Project Value)
+
+Sources: Navigant / Arcadis / Industry Benchmarks
+
+Data: 1990: 0.8, 1995: 1.1, 2000: 1.8, 2005: 2.4, 2010: 3.4, 2015: 4.2, 2020: 5.3, 2024: 5.9
+
+2. Construction Arbitration Filings (AAA)
+
+Sources: American Arbitration Association (AAA) Annual Reports
+
+Data: 1986: 3100, 1990: 3600, 1995: 4200, 2000: 4500, 2005: 6100, 2010: 8400, 2015: 9800, 2020: 11500, 2024: 13200
+
+3. Change Order Cost Impact (% of Contract)
+
+Sources: CII (Construction Industry Institute) Historical Data
+
+Data: 1986: 2.2, 1990: 2.5, 1995: 3.1, 2000: 4.0, 2005: 4.8, 2010: 5.9, 2015: 7.2, 2020: 8.8, 2024: 10.5
+
+MACRO SCALE CONTEXT
+
+1. Total Construction Put-in-Place (Unadjusted $B)
+
+Sources: U.S. Census Bureau (C30/FRED)
+
+Data: 1986: 390, 1988: 415, 1990: 440, 1992: 450, 1994: 520, 1996: 600, 1998: 680, 2000: 830, 2002: 860, 2004: 1000, 2006: 1160, 2008: 1080, 2010: 810, 2012: 850, 2014: 990, 2016: 1190, 2018: 1300, 2020: 1450, 2022: 1850, 2024: 2100
+
+2. Construction Productivity Index (1987=100)
+
+Sources: BLS Labor Productivity and Costs (Annual)
+
+Data: 1987: 100, 1988: 99.8, 1989: 99.5, 1990: 99.4, 1991: 99.2, 1992: 99.0, 1993: 98.9, 1994: 98.8, 1995: 98.8, 1996: 98.5, 1997: 98.1, 1998: 98.0, 1999: 98.1, 2000: 98.0, 2001: 97.5, 2002: 97.0, 2003: 96.8, 2004: 96.6, 2005: 96.5, 2006: 96.1, 2007: 95.8, 2008: 95.5, 2009: 95.2, 2010: 95.2, 2011: 95.0, 2012: 94.7, 2013: 94.5, 2014: 94.2, 2015: 94.0, 2016: 93.7, 2017: 93.4, 2018: 93.0, 2019: 92.8, 2020: 92.5, 2021: 92.2, 2022: 91.8, 2023: 91.5, 2024: 91.2
+
+3. ConTech Venture Capital Investment ($M)
+
+Sources: Pitchbook / Cemex Ventures
+
+Data: 1995: 10, 1998: 80, 2000: 150, 2005: 280, 2010: 420, 2012: 800, 2014: 1200, 2016: 2500, 2018: 4800, 2020: 4500, 2022: 9200, 2024: 10200
+
